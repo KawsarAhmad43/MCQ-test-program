@@ -4,6 +4,7 @@ using namespace std;
 class obj{
 public:
     char x;
+    int f=0;
     void getobj();
 
 };
@@ -23,6 +24,8 @@ switch(x)
 {
 case'b':
     cout<<"Right Answer..Welldone!! "<<endl;
+    f++;
+    cout<<" obtained point ="<<f;
     break;
 default:
     cout<<"Wrong Answer..The correct is: (b)"<<endl;
@@ -40,6 +43,8 @@ switch(x)
 {
 case'c':
     cout<<"Wright Answer!! Bravo!! "<<endl;
+        f++;
+    cout<<" Obtained point="<<f;
     break;
 default:
     cout<<"Wrong Answer!..Right Answer Is: (c)"<<endl;
@@ -56,7 +61,9 @@ cin>>x;
 switch(x)
 {
 case'c':
-    cout<<"Right Answer ";
+    cout<<"Right Answer "<<endl;
+        f++;
+    cout<<" Obtained point="<<f;
     break;
 default:
     cout<<"Wrong Answer..Right answer is (C) "<<endl;
@@ -73,6 +80,8 @@ switch(x)
 {
 case'c':
     cout<<"Right Answer!! "<<endl;
+        f++;
+    cout<<" obtained point="<<f;
     break;
 default:
     cout<<"Wrong Answer....Right Answer is (c) "<<endl;
@@ -89,13 +98,15 @@ switch(x)
 {
 case'd':
     cout<<"Right Answer!! clap clap!!!!..you're a Genius! "<<endl;
+        f++;
+    cout<<" Obtained point="<<f;
     break;
 default:
     cout<<"Wrong Answer.....Right Answer is (d)"<<endl;
 }
 
-
-
+cout<<endl;
+cout<<"Your Total Point:"<<f;
 
 }
 int main()
